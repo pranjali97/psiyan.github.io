@@ -1,4 +1,10 @@
-<script type="text/javascript">
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Aperture Labs</title>
+</head>
+<body>
+	<script type="text/javascript">
 	// request permission on page load
 	document.addEventListener('DOMContentLoaded', function () {
 		if (Notification.permission !== 'granted')
@@ -6,7 +12,8 @@
 	});
 	function notifyMe() {
 		if (!Notification) {
-			alert('Desktop notifications not available in your browser. Try Chromium.');
+			document.getElementById("errorDisplay").innerHTML = 
+				"Notifications not available in your browser";
 			return;
 		}
 		if (Notification.permission !== 'granted')
@@ -23,3 +30,6 @@
 	}
 </script>
 <button onclick="notifyMe()">Notify me!</button>
+<p id="errorDisplay"></p>
+</body>
+</html>
