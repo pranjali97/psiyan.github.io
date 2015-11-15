@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aperture Labs</title>
+	<style type="text/css">
+		#ticker_div {
+			background-color: #009688;
+			color: #ffffff;
+			
+			vertical-align: middle;
+			
+			width: 70%;
+			height: 30%;
+			
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		#datetime_ticker {
+			text-align: center;
+			position: relative;	
+			vertical-align: middle;
+			font-size: 3vw;
+		}
+	</style>
+</head>
+<body>
+	<div id="ticker_div">
+		<p id="datetime_ticker"></p>
+	</div>
+	<p id="target"></p>
+	<script>
+		var targetDatetime = new Date(2015, 10, 24, 8, 30, 0, 0);
+		var currentDatetime;
+		setInterval(tickAway, 1000);
+		function tickAway () {
+			currentDatetime = new Date(targetDatetime.valueOf() - (new Date()).valueOf());
+			document.getElementById("datetime_ticker").innerHTML = 
+			String(currentDatetime.getDate()) + "days " + 
+			String(currentDatetime.getHours()) + "hours " +
+			String(currentDatetime.getMinutes()) + "minutes " + 
+			String(currentDatetime.getSeconds()) + "seconds";
+		}
+	</script>
+</body>
+</html>
+
