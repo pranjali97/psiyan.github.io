@@ -49,7 +49,21 @@
 				 4 + "vh";
 			document.getElementById("caption").style.fontSize = 3 + "vh";
 		};
-		
+
+		if (
+			parseInt(
+				document.getElementById("datetime_ticker").style.fontSize
+				) < 16) {
+			document.getElementById("datetime_ticker").style.fontSize = "16px";
+		}
+
+		if (
+			parseInt(
+				document.getElementById("caption").style.fontSize
+				) < 16) {
+			document.getElementById("caption").style.fontSize = "16px";
+		}
+
 		function tickAway () {
 			currentDatetime = 
 				new Date(targetDatetime.valueOf() - (new Date()).valueOf());
