@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Aperture Labs</title>
 	<style type="text/css">
+		body {
+			background-color: #000000;
+		}
 		#ticker_div {
 			background-color: #009688;
 			color: #ffffff;
-			
-			vertical-align: middle;
 			
 			width: 70%;
 			height: 30%;
@@ -17,31 +19,54 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+
 		#datetime_ticker {
 			text-align: center;
-			position: relative;	
-			vertical-align: middle;
 			font-size: 3vw;
+		}
+
+		#caption {
+			text-align: right;
+			font-size: 2vw;
+			padding-right: 10%;
 		}
 	</style>
 </head>
 <body>
 	<div id="ticker_div">
 		<p id="datetime_ticker"></p>
+		<p id="caption">...till doomsday</p>
 	</div>
 	<p id="target"></p>
 	<script>
+		var displayString;
 		var targetDatetime = new Date(2015, 10, 24, 8, 30, 0, 0);
 		var currentDatetime;
-		setInterval(tickAway, 1000);
+
+		if (window.innerWidth < window.innerHeight) {
+			document.getElementById("ticker_div").style.height = 50 + "%";
+			document.getElementById("datetime_ticker").style.fontSize =
+				 4 + "vh";
+			document.getElementById("caption").style.fontSize = 3 + "vh";
+		};
+		
 		function tickAway () {
-			currentDatetime = new Date(targetDatetime.valueOf() - (new Date()).valueOf());
+			currentDatetime = 
+				new Date(targetDatetime.valueOf() - (new Date()).valueOf());
+			displayString = 
+				String(currentDatetime.getDate()) + "days " + 
+				String(currentDatetime.getHours()) + "hours " +
+				String(currentDatetime.getMinutes()) + "minutes " + 
+				String(currentDatetime.getSeconds()) + "seconds";
+			if (window.innerWidth < window.innerHeight) {
+				displayString = 
+					displayString.replace(new RegExp(" ", 'g'), " <br>");
+			}
 			document.getElementById("datetime_ticker").innerHTML = 
-			String(currentDatetime.getDate()) + "days " + 
-			String(currentDatetime.getHours()) + "hours " +
-			String(currentDatetime.getMinutes()) + "minutes " + 
-			String(currentDatetime.getSeconds()) + "seconds";
+				displayString;
 		}
+
+		setInterval(tickAway, 1000);
 	</script>
 </body>
 </html>
