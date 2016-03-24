@@ -1,0 +1,42 @@
+#thelink {
+	cursor : move;
+	text-decoration: none;
+	font-variant: small-caps;
+	color: #DDEEFF;
+	font-size: 300%;
+	/*font-family: sans-serif;*/
+}
+#bklet-div {
+	margin: auto;
+	border: 3px solid #708090;
+	padding: 10px;
+	display: inline-block;
+}
+#what {
+	font-variant: small-caps;
+	font-family: sans-serif;
+}
+.centerFlex {
+	position: absolute;
+	top: 25%;
+	width: 99%;
+	vertical-align: middle;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	color:white;
+	opacity:0.95;
+}
+.instructions {
+	width: 60%;
+	font-family: sans-serif;
+}
+dt {
+	display: list-item;
+	list-style-type: disc;
+}
+body {
+	background-color: #CFD8DC;
+}

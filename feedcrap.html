@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FeedCrap</title>
+	<link rel="stylesheet" type="text/css" href="feedcrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body id="grad1">
+	<div id="cflex" class="centerFlex">
+		<div id="bklet-div">
+			<a id="thelink" class="rdb-no-link" href="javascript:(function(){javascript:(function(){var x=prompt('Score: ');if(!x||x>7||x<1){alert('Invalid Score!');return;}else{x--;function _cy_filter(argument){return argument.type=='radio'}var _cy_elems=[];var _cy_radios=[];var _cy_iframe=document.getElementById('contentFrame');if(!_cy_iframe){alert('Error: contentFrame not accesible\nAre you on the correct page?');return;}var _cy_divs=_cy_iframe.contentWindow.document.getElementsByClassName('takeQuestionDiv');if(!_cy_divs){alert('Error: takeQuestionDiv not accesible\nAre you on the correct page?');return;}for(var i=_cy_divs.length-1;i>=0;i--){_cy_elems.push(_cy_divs[i].getElementsByTagName('*'));};for(var i=_cy_elems.length-1;i>=0;i--){for(var j=_cy_elems[i].length-1;j>=0;j--){if(_cy_filter(_cy_elems[i][j]))_cy_radios.push(_cy_elems[i][j]);}};if(!_cy_radios.length){alert('Error: _cy_radios.length is zero\nAre you on the correct page?');return;}for(var i=_cy_radios.length-1;i>=0;i--){if(_cy_radios[i].value==x)_cy_radios[i].checked=true;}}})();})();" title="FeedCrap" draggable="true">FeedCrap
+			</a>
+		</div>
+		<div class="instructions">
+			<div class="ins-header">
+				<h2 id="what">A tool to make Faculty Feedback easier!</h2>
+				<h3>Here's how it works:</h3>
+			</div>
+			<div>
+				<dl>
+					<dt>Make your Bookmarks Bar visible</dt>
+					<dd>(Ctrl+Shift+B on Chrome)</dd>
+				</dl>
+				<dl>
+					<dt>Drag 'n' Drop the FeedCrap Bookmarklet onto the Bookmarks Bar</dt>
+					<dd>The big huge 'FeedCrap' written on left, yup!</dd>
+				</dl>
+				<dl>
+					<dt>Navigate to the feedback form on Blackboard!</dt>
+					<dd>The one with all those radio buttons</dd>
+				</dl>
+				<dl>
+					<dt>Click on the Bookmarklet on the bar, input a score in the prompt and choose OK!</dt>
+					<dd></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="feedcrap.js"></script>
+</body>
+</html>
