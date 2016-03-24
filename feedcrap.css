@@ -4,7 +4,6 @@
 	font-variant: small-caps;
 	color: #DDEEFF;
 	font-size: 300%;
-	/*font-family: sans-serif;*/
 }
 #bklet-div {
 	margin: auto;
@@ -14,11 +13,10 @@
 }
 #what {
 	font-variant: small-caps;
-	font-family: sans-serif;
 }
 .centerFlex {
 	position: absolute;
-	top: 25%;
+	top: 21%;
 	width: 99%;
 	vertical-align: middle;
 	align-items: center;
@@ -31,7 +29,7 @@
 }
 .instructions {
 	width: 60%;
-	font-family: sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 }
 dt {
 	display: list-item;
