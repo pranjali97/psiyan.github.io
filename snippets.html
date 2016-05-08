@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>13-14 Reexam Snippets</title>
+	<script type="text/javascript" src="scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="ribbon">
+	<span class="art">&lt/&gt</span>
+		<span class="headText">Code Snippets from Past Papers</span>
+	</div>
+	<div class="container">
+	<div class="card">
+		<div class="question">Square bulleted unordered list</div>
+		<div class="output">
+			<ul style="list-style-type: square;">
+				<li>Banana</li>
+				<li>Apple</li>
+				<li>Pineapple</li>
+				<li>Strawberry</li>
+			</ul>
+		</div>
+		<div class="code">
+			<code>
+				&ltul style="list-style-type: square;"&gt<br>
+				<div class="tab">
+					&ltli&gtBanana&lt/li&gt<br>
+					&ltli&gtApple&lt/li&gt<br>
+					&ltli&gtPineapple&lt/li&gt<br>
+					&ltli&gtStrawberry&lt/li&gt<br>
+				</div>
+				&lt/ul&gt
+			</code>
+		</div>
+	</div>
+	<div class="card">
+		<div class="question">Audio Clip</div>
+		<div class="output">
+			<audio controls class="acx">
+				<source src="words.m4a" type="audio/mpeg">	
+			</audio>
+		</div>
+		<div class="code">
+			<code>
+				&ltaudio controls&gt<br>
+				<div class="tab">
+					&ltsource src="words.m4a" type="audio/mpeg"&gt<br>
+				</div>
+				&lt/audio&gt
+			</code>
+		</div>
+	</div>
+	<div class="card">
+		<div class="question">Text area with 10 rows and columns</div>
+		<div class="output">
+			<textarea rows="10" cols="10"></textarea>
+		</div>
+		<div class="code">
+			<code>
+				&lttextarea rows="10" cols="10"&gt&lt/textarea&gt
+			</code>
+		</div>
+	</div>
+	<div class="card">
+		<div class="question">Radio group</div>
+		<div class="output">
+			<form>
+				<input type="radio" name="fruit">Banana</input>
+				<input type="radio" name="fruit">Appple</input>
+				<input type="radio" name="fruit">Pineapple</input>
+				<input type="radio" name="fruit">Kiwi</input>
+			</form>
+		</div>
+		<div class="code">
+			<code>
+				&ltform&gt<br>
+				<div class="tab">
+					&ltinput type="radio" name="fruit"&gtBanana&lt/input&gt<br>
+					&ltinput type="radio" name="fruit"&gtAppple&lt/input&gt<br>
+					&ltinput type="radio" name="fruit"&gtPineapple&lt/input&gt<br>
+					&ltinput type="radio" name="fruit"&gtKiwi&lt/input&gt<br>
+				</div>
+				&lt/form&gt
+			</code>
+		</div>
+	</div>
+	<div class="card">
+		<div class="question">Visited link colour</div>
+		<div class="output">
+			<a id="self" href="#self">Google!</a>
+		</div>
+		<div class="code">
+			<code>
+				a:visited {
+				<div class="tab">
+					/*does not work with inline css*/<br>
+					color: red;
+				</div>
+				}
+			</code>
+		</div>
+	</div>
+	<div>
+		<div class="question"></div>
+		<div class="output">
+			<input type="button" onclick="modStatus()" value="Run"/>
+		</div>
+		<div class="code">
+			<code>
+				
+			</code>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
