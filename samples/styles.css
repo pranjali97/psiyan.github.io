@@ -7,9 +7,9 @@ body {
 	margin-left: 20px;
 }
 
-a:visited {
+/*a:visited {
 	color: red;
-}
+}*/
 
 ul {
 	margin-top: 0px;
@@ -26,6 +26,7 @@ ul {
 	width: 100%;
 	line-height: 50px;
 	z-index: 65536;
+	white-space: nowrap;
 }
 
 .art {
@@ -43,6 +44,23 @@ ul {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: normal;
+}
+
+.navdiv{
+	float: right;
+	display: inline-block;
+	line-height: normal;
+	text-align: right;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+.navLink {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .container {
