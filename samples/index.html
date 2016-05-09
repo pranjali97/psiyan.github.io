@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body onload="autoInvoke()">
-	<div class="ribbon">
+	<div class="ribbon" id="ayz">
 	<span class="art">&lt/&gt</span>
 		<span class="headText">Snippets from Past Papers</span>
 	<div class="navdiv"><a class="navLink" href="https://github.com/psiyan/psiyan.github.io/tree/master/samples">Source</a></div>
@@ -90,7 +90,7 @@
 	<div class="card">
 		<div class="question">Visited link colour</div>
 		<div class="output">
-			<a id="self" href="#self">Google!</a>
+			<a id="self" href="#ayz">Google!</a>
 		</div>
 		<div class="code">
 			<code>
@@ -106,7 +106,7 @@
 	<div class="card">
 		<div class="question">Message in the status bar</div>
 		<div class="output">
-			<input type="button" onclick="modStatus()" value="Run"/>
+			<input class="button" type="button" onclick="modStatus()" value="Run"/>
 		</div>
 		<div class="code">
 			<code>
@@ -117,7 +117,7 @@
 	<div class="card">
 		<div class="question">Display Hello World</div>
 		<div class="output">
-			<input type="button" onclick="hw()" value="Run"/>
+			<input class="button" type="button" onclick="hw()" value="Run"/>
 		</div>
 		<div class="code">
 			<code>
@@ -128,7 +128,7 @@
 	<div class="card">
 		<div class="question">Print only 'WORLD'</div>
 		<div class="output">
-			<input type="button" onclick="pow()" value="Run"/>
+			<input class="button" type="button" onclick="pow()" value="Run"/>
 		</div>
 		<div class="code">
 			<code>
@@ -140,7 +140,7 @@
 	<div class="card">
 		<div class="question">Prompt and access text box value using ID</div>
 		<div class="output">
-			<input type="button" onclick="boxPrompt()" value="Run"/>
+			<input class="button" type="button" onclick="boxPrompt()" value="Run"/>
 			<input type="text" id="ttbox" />
 		</div>
 		<div class="code">

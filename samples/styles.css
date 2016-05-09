@@ -7,9 +7,17 @@ body {
 	margin-left: 20px;
 }
 
-/*a:visited {
+.output .a:visited {
 	color: red;
-}*/
+}
+
+.button {
+	background-color: #3f51b5;
+	text-decoration: none;
+	color: #ffffff;
+	border: none;
+	padding: 4px 8px;
+}
 
 ul {
 	margin-top: 0px;
@@ -19,7 +27,7 @@ ul {
 .ribbon {
 	position: fixed;
 	top: 0;
-	background-color: #3f51b5;
+	background-color: rgba(63,81,181, 0.9);
 	color: #ffffff;
 	font-weight: bold;
 	height: 50px;
@@ -93,7 +101,6 @@ ul {
 }
 
 .output {
-	/*background-color: #f0f4c3;*/
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 4px;
