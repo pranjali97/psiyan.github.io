@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>13-14 Reexam Snippets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="scripts.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -101,14 +102,25 @@
 			</code>
 		</div>
 	</div>
-	<div>
-		<div class="question"></div>
+	<div class="card">
+		<div class="question">Message in the status bar</div>
 		<div class="output">
 			<input type="button" onclick="modStatus()" value="Run"/>
 		</div>
 		<div class="code">
 			<code>
-				
+				window.status = "Stuck in a browser factory!";
+			</code>
+		</div>
+	</div>
+	<div class="card">
+		<div class="question">Display Hello World</div>
+		<div class="output">
+			<input type="button" onclick="hw()" value="Run"/>
+		</div>
+		<div class="code">
+			<code>
+				alert("Hello, world!");
 			</code>
 		</div>
 	</div>
