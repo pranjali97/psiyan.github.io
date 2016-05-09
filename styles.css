@@ -55,12 +55,13 @@ ul {
 	margin-right: 20px;
 	margin-top: 4px;
 	margin-bottom: 4px;
-	border: 2px;
 	padding: 8px;
+	border-left: thick solid #3f51b5;
 }
 
 .question {
 	font-weight: bold;
+	font-size: 110%;
 	padding: 8px;
 }
 
