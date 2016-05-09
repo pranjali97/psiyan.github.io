@@ -11,9 +11,14 @@ function pow() {
 	alert(a.split(" ")[1]);
 }
 
-function plow() {
+function powalt() {
 	var a = "HELLO WORLD";
-	alert(a.toLowerCase());
+	alert(a.slice(6));
+}
+
+function plow() {
+	var box = document.getElementById("casebox");
+	box.value = box.value.toLowerCase();
 }
 
 function boxPrompt() {
@@ -23,6 +28,10 @@ function boxPrompt() {
 
 function getUA() {
 	document.getElementById("uaspan").innerHTML = navigator.userAgent;
+}
+
+function lc() {
+	var a = "HELLO WORLD";
 }
 
 function autoInvoke() {

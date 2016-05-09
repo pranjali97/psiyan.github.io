@@ -3,11 +3,15 @@ body {
 	margin: 0;
 }
 
+p.scaps {
+	font-variant: small-caps;
+}
+
 .tab {
 	margin-left: 20px;
 }
 
-.output .a:visited {
+a.ugly:visited {
 	color: red;
 }
 
@@ -34,7 +38,6 @@ ul {
 	width: 100%;
 	line-height: 50px;
 	z-index: 65536;
-	white-space: nowrap;
 }
 
 .art {
@@ -56,11 +59,14 @@ ul {
 
 .navdiv{
 	float: right;
-	display: inline-block;
-	line-height: normal;
+	display: inline;
 	text-align: right;
-	margin-top: 15px;
+	vertical-align: middle;
+	height: 100%;
 	margin-right: 20px;
+	padding-right: 8px;
+	padding-left: 8px;
+	background-color: #E91E63;
 }
 
 .navLink {
@@ -89,6 +95,7 @@ ul {
 	font-weight: bold;
 	font-size: 110%;
 	padding: 8px;
+	color: #E91E63;
 }
 
 .card {
