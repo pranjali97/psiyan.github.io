@@ -5,9 +5,9 @@ body {
 	background-attachment: fixed;
 	color: #ffffff;
 
-	height: 100vh;
-	min-height: 80vh;
-	max-height: 100vh;
+	height: 95vh;
+	min-height: 95vh;
+	max-height: 95vh;
 
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
 }
@@ -44,5 +44,5 @@ div.div-tagline {
 
 p.tagline {
 	text-align: right;
-	font-size: 160%;
+	font-size: 120%;
 }
