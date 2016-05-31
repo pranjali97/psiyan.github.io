@@ -5,8 +5,8 @@ body {
 	background-attachment: fixed;
 	color: #ffffff;
 
-	height: 97vh;
-	max-height: 97vh;
+	/*height: 97vh;
+	max-height: 97vh;*/
 
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
 }
