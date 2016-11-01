@@ -1,6 +1,7 @@
 body {
 	font-family: "Arial", Helvetica, sans-serif;
 	margin: 0;
+	background-color: #eeeeee;
 }
 
 p.scaps {
@@ -100,11 +101,12 @@ ul {
 
 .card {
 	/*background-color: #242729;*/
-	width: 700px;
+	width: 90%;
 	margin: 15px auto;
 	padding: 10px;
 	align-self: center;
 	box-shadow: 1px 1px 3px #888888;
+	background-color: #ffffff;
 }
 
 .output {
@@ -117,4 +119,10 @@ ul {
 
 .acx {
 	z-index: -1;
+}
+
+@media only screen and (min-width: 700px) {
+    .card {
+        width: 700px;
+    }
 }
